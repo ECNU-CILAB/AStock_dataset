@@ -1,10 +1,10 @@
 import argparse
-from experiments.exp_sfm import Exp_SFM
+from experiments.exp_tcn import Exp_TCN
 
 desc = 'DARNN'
 parser = argparse.ArgumentParser(description=desc)
 parser.add_argument('-dp', '--data_path', help='path of data', type=str,
-                    default='../datasets/raw')
+                    default='../data')
 parser.add_argument('-rp', '--res_path', help='path to save result', type=str,
                     default='../res/TCN')
 parser.add_argument('-mp', '--model_path', help='path to save model', type=str,
@@ -40,7 +40,7 @@ parser.add_argument('--kernel_size', help='kernel_size', type=int, default=4)
 if __name__ == '__main__':
     args = parser.parse_args()
 
-    Exp = Exp_SFM(
+    Exp = Exp_TCN(
         data_path=args.data_path,
         res_path=args.res_path,
         model_path=args.model_path,
@@ -51,13 +51,13 @@ if __name__ == '__main__':
         gpu=args.gpu,
         batchsize=args.batchsize,
         input_size=args.input_size,
-        hidden_size=args.hidden_size,
+        output_size=args.output_size,
         lr=args.lr,
         epoch=args.epoch,
         train=args.train,
         predict=args.predict,
         fix=args.fix,
         dropout=args.dropout,
-        kernel_size = args.kernei_size
+        kernel_size = args.kernel_size
     )
     Exp.run_model()
