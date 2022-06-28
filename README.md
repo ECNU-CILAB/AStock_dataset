@@ -1,22 +1,21 @@
-[TOC]
-
-
-
 ## About The Project
 
 
-We provide:
+#### We provide:
 
 1. A heterogeneous financial dataset including both technical data and fundamental data concentrating on the Chinese stock market.
 2. A lightweight back-test system with the inclusion of investment-wise metrics.
 3. Widely used  benchmark methods for financial time series prediction(continuously updated )
 
-The members of the dataset are as follows:
-![image1](https://gin-1256118453.cos.ap-shanghai.myqcloud.com/MCSM/mscm_component.png)
-The data sample of stock 000858.SZ (Wuliangye):
-![image2](https://gin-1256118453.cos.ap-shanghai.myqcloud.com/MCSM/specific_data.png)
-Time Range:
+#### The members of the dataset are as follows:
 
+<img src="https://gin-1256118453.cos.ap-shanghai.myqcloud.com/MCSM/mscm_component.png" alt="image-20220628180009496" style="zoom: 50%;" />
+
+#### The data sample of stock 000858.SZ (Wuliangye):
+
+<img src="https://gin-1256118453.cos.ap-shanghai.myqcloud.com/MCSM/specific_data.png" alt="specific_data" style="zoom:67%;" />
+
+#### Time Range:
 01/01/2018-31/05/2020
 
 
